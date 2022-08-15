@@ -1,6 +1,9 @@
 # eslint-plugin-no-await-in-promise
 
-ESLint Plugin to error when using await inside promise statements. Using `await` inside a `Promise.all` or `Promise.race` will make the awaited Promise resolve first, and only after that the `Promise.all` or `Promise.race` will be called. For `.all`, this means the promises are run serially, for `.race`, the awaited promise will now _always_ win. This is almost never what you want.
+![npm](https://img.shields.io/npm/v/eslint-plugin-no-await-in-promise)
+
+
+ESLint Plugin to error when using await inside promise statements. Using `await` inside a `Promise.all` or `Promise.race` will make the awaited Promise resolve first, and only after that the `Promise.all` or `Promise.race` will be called. For `.all`, this means the promises are run serially, for `.race`, the awaited promise will now _always_ win. This is rarely what you want. This plugin will warn you against such usages and suggest an auto-fix.
 
 ## Rule Details
 
@@ -24,30 +27,35 @@ You'll first need to install [ESLint](https://eslint.org/):
 
 ```sh
 npm i eslint --save-dev
+// Or
+yarn add -D eslint
 ```
 
 Next, install `eslint-plugin-no-await-in-promise`:
 
 ```sh
 npm install eslint-plugin-no-await-in-promise --save-dev
+// Or
+yarn add -D eslint-plugin-no-await-in-promise
 ```
 
 ## Usage
 
-Add `no-await-in-promise` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Configure the plugin in your `.eslintrc`:
 
 ```json
 {
-  "plugins": ["no-await-in-promise"]
+  "extends": ["plugin:no-await-in-promise/recommended"]
 }
 ```
 
-Then configure the rules you want to use under the rules section.
+This essentially expands to:
 
 ```json
 {
+  "plugins": ["no-await-in-promise"],
   "rules": {
-    "no-await-in-promise/rule-name": "error"
+    "no-await-in-promise/no-await-in-promise": "error"
   }
 }
 ```
