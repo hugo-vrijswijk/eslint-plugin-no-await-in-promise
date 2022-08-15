@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
+    "module": "ES2020",
     "declaration": true,
     "sourceMap": true,
     "strict": true,
@@ -16,5 +16,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": ["dist**/*"]
 }

@@ -1,6 +1,5 @@
-// @ts-check
-const rule = require('../../../lib/rules/no-await-in-promise.js');
-const { RuleTester } = require('eslint');
+import rule from '../../../lib/rules/no-await-in-promise.js';
+import { RuleTester } from 'eslint';
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } });
 
