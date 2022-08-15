@@ -1,3 +1,6 @@
 .github/
 tests/
-.eslintrc.js
+.eslintrc
+.prettierrc
+tsconfig.json
+*.tgz
