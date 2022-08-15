@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.0.1...v1.1.0) (2022-08-15)
+
+
+### Features
+
+* cross-build to ES modules and CommonJS ([334f0a3](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/334f0a3612b8dd8ea71588f604e7a3df85d8791c))
+
+
+### Bug Fixes
+
+* update lint rule message ([ffecaf9](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/ffecaf919469539be8366abba1b11f7418466ba2))
+
 ## [1.0.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.0.0...v1.0.1) (2022-08-15)
 
 
