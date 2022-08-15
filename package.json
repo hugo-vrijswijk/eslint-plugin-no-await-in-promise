@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-await-in-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint Plugin to error when using await inside promise statements",
   "keywords": [
     "eslint",
