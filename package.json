@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-no-await-in-promise",
+  "version": "1.0.0",
+  "description": "ESLint Plugin to error when using await inside promise statements",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugo-vrijswijk/no-await-in-promise.git"
+  },
+  "license": "MIT",
+  "author": "Hugo van Rijswijk",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "mocha": "^10.0.0"
+  },
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  }
+}
