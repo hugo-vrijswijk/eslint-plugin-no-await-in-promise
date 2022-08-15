@@ -8,15 +8,16 @@ const arrNames = ['all', 'allSettled', 'any', 'race'];
 
 ruleTester.run('no-await-in-promise', rule, {
   valid: arrNames.flatMap((name) => [
-    `async function main() { Promise.${name}([foo]) }`,
-    `async function main() { Promise.${name}([foo, bar]) }`,
-    `async function main() { Promise.${name}([]) }`,
-    `async function main() { ${name}([await foo]) }`,
-    `async function main() { ${name}([foo.then(async () => await bar)]) }`,
+    `async () => Promise.${name}([foo])`,
+    `async () => Promise.${name}([foo, bar])`,
+    `async () => Promise.${name}([])`,
+    `async () => ${name}([await foo])`,
+    `async () => ${name}([foo.then(async () => await bar)])`,
+    `async () => { await Promise.${name}([foo()]) }`,
   ]),
   invalid: arrNames.flatMap((name) => [
     {
-      code: `async function main() { Promise.${name}([await foo]) }`,
+      code: `async () => Promise.${name}([await foo])`,
       errors: [
         {
           messageId: 'noAwaitInPromise',
@@ -24,14 +25,14 @@ ruleTester.run('no-await-in-promise', rule, {
           suggestions: [
             {
               messageId: 'removeAwait',
-              output: `async function main() { Promise.${name}([foo]) }`,
+              output: `async () => Promise.${name}([foo])`,
             },
           ],
         },
       ],
     },
     {
-      code: `async function main() { Promise.${name}([foo, await bar()]) }`,
+      code: `async () => Promise.${name}([foo, await bar()])`,
       errors: [
         {
           messageId: 'noAwaitInPromise',
@@ -39,7 +40,7 @@ ruleTester.run('no-await-in-promise', rule, {
           suggestions: [
             {
               messageId: 'removeAwait',
-              output: `async function main() { Promise.${name}([foo, bar()]) }`,
+              output: `async () => Promise.${name}([foo, bar()])`,
             },
           ],
         },

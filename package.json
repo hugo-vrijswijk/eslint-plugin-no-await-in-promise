@@ -16,15 +16,21 @@
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "npm run lint:eslint && npm run lint:tsc",
+    "lint:eslint": "eslint .",
+    "lint:tsc": "tsc",
     "test": "mocha tests --recursive"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@types/eslint": "^8.4.5",
     "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-plugin": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "mocha": "^10.0.0"
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
