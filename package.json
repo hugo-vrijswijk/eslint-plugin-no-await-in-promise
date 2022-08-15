@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugo-vrijswijk/no-await-in-promise.git"
+    "url": "git+https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise.git"
   },
   "license": "MIT",
   "author": "Hugo van Rijswijk",
