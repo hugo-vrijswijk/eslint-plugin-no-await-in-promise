@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.0...v1.1.1) (2022-08-16)
+
+
+### Bug Fixes
+
+* rule is now fixable instead of a suggestion ([557127d](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/557127dceffdd5962dcabc3ef5a29c54d2431f63))
+
 ## [1.1.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.0.1...v1.1.0) (2022-08-15)
 
 
