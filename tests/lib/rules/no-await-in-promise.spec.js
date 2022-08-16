@@ -17,33 +17,13 @@ ruleTester.run('no-await-in-promise', rule, {
   invalid: arrNames.flatMap((name) => [
     {
       code: `async () => Promise.${name}([await foo])`,
-      errors: [
-        {
-          messageId: 'noAwaitInPromise',
-          data: { name },
-          suggestions: [
-            {
-              messageId: 'removeAwait',
-              output: `async () => Promise.${name}([foo])`,
-            },
-          ],
-        },
-      ],
+      output: `async () => Promise.${name}([foo])`,
+      errors: [{ messageId: 'noAwaitInPromise', data: { name } }],
     },
     {
       code: `async () => Promise.${name}([foo, await bar()])`,
-      errors: [
-        {
-          messageId: 'noAwaitInPromise',
-          data: { name },
-          suggestions: [
-            {
-              messageId: 'removeAwait',
-              output: `async () => Promise.${name}([foo, bar()])`,
-            },
-          ],
-        },
-      ],
+      output: `async () => Promise.${name}([foo, bar()])`,
+      errors: [{ messageId: 'noAwaitInPromise', data: { name } }],
     },
   ]),
 });
