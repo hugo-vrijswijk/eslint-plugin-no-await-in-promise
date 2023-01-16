@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.4.5",
-    "esbuild": "^0.16.1",
+    "esbuild": "^0.17.0",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-plugin": "^5.0.0",
