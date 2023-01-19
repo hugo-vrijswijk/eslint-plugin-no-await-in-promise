@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.1...v1.1.2) (2023-01-19)
+
+
+### Bug Fixes
+
+* release bump ([8527704](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/85277049343f99566495c7c71bc9030cabf5ff90))
+
 ## [1.1.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.0...v1.1.1) (2022-08-16)
 
 
