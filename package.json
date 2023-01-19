@@ -14,32 +14,33 @@
   },
   "license": "MIT",
   "author": "Hugo van Rijswijk",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/index.js",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   },
   "scripts": {
-    "build": "esbuild lib/index.js --outdir=dist --platform=node --format=cjs --target=node14 --bundle --sourcemap --out-extension:.js=.cjs --external:./node_modules/*",
-    "lint": "npm run lint:eslint && npm run lint:tsc",
-    "lint:eslint": "eslint . --ignore-path .gitignore",
-    "lint:tsc": "tsc",
-    "test": "mocha tests --recursive"
+    "build": "tsup lib/index.ts --dts --sourcemap --format esm,cjs --target node14",
+    "lint": "eslint . --ignore-path .gitignore",
+    "test": "mocha tests --extension ts -r esbuild-register --recursive"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.5",
-    "esbuild": "^0.17.0",
-    "eslint": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "esbuild-register": "^3.4.2",
+    "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-eslint-plugin": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "mocha": "^10.0.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"

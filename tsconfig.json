@@ -5,8 +5,7 @@
     "declaration": true,
     "sourceMap": true,
     "strict": true,
-    "allowJs": true,
-    "checkJs": true,
+    "allowJs": false,
     "noEmit": true,
     "isolatedModules": true,
     "skipLibCheck": true,
@@ -17,5 +16,5 @@
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["dist**/*"]
+  "exclude": ["dist/**/*"]
 }

@@ -1,9 +1,12 @@
 {
   "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:eslint-plugin/recommended",
     "plugin:node/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
   "env": {
@@ -14,5 +17,10 @@
       "files": ["tests/**/*.js"],
       "env": { "mocha": true }
     }
-  ]
+  ],
+  "settings": {
+    "node": {
+      "tryExtensions": [".js", ".ts"]
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import rule from '../../../lib/rules/no-await-in-promise.js';
+import rule from '../../../lib/rules/no-await-in-promise';
 import { RuleTester } from 'eslint';
 
 const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } });

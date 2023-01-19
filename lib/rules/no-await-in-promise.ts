@@ -3,12 +3,13 @@
  * @author Hugo van Rijswijk
  */
 
+import type { Rule } from 'eslint';
+
 //------------------------------------------------------------------------------
 // Rule Definition
 //------------------------------------------------------------------------------
 
-/** @type {import('eslint').Rule.RuleModule} */
-export default {
+const rule: Rule.RuleModule = {
   meta: {
     type: 'problem',
     docs: {
@@ -56,3 +57,5 @@ export default {
     };
   },
 };
+
+export default rule;

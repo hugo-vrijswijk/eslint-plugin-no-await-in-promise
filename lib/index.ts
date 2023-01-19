@@ -1,11 +1,12 @@
+import type { ESLint, Rule } from 'eslint';
+
 /**
  * @fileoverview ESLint Plugin to error when using await inside promise statements
  * @author Hugo van Rijswijk
  */
 import noAwaitInPromise from './rules/no-await-in-promise';
 
-/** @type {Record<string, import('eslint').ESLint.ConfigData>} */
-export const configs = {
+export const configs: Record<string, ESLint.ConfigData> = {
   recommended: {
     plugins: ['no-await-in-promise'],
     rules: {
@@ -14,7 +15,6 @@ export const configs = {
   },
 };
 
-/** @type {Record<string, import('eslint').Rule.RuleModule>} */
-export const rules = {
+export const rules: Record<string, Rule.RuleModule> = {
   'no-await-in-promise': noAwaitInPromise,
 };
