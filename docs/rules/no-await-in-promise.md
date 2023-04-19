@@ -18,7 +18,6 @@ await Promise.all([foo(), bar()]);
 await Promise.race([foo(), bar()]);
 ```
 
-
 ## When Not To Use It
 
 If you are absolutely sure that awaiting a promise is what you want inside a promise, you can disable it, but you should consider doing so only if you know what you are doing.

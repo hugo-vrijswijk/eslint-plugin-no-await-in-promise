@@ -7,7 +7,7 @@
     "plugin:eslint-plugin/recommended",
     "plugin:node/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "env": {
     "node": true
