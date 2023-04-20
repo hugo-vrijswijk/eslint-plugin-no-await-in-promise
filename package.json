@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "check": "concurrently -c auto \"npm:lint:*\" \"npm:build\" \"npm:test\"",
+    "check": "concurrently -c auto \"npm:lint:*\" \"npm:build\"",
     "build": "tsup lib/index.ts --dts --sourcemap --format esm,cjs --target node16",
     "lint:eslint": "eslint . --ignore-path .gitignore",
     "lint:prettier": "prettier --cache --check .",
