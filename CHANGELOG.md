@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.3...v1.1.4) (2023-06-28)
+
+
+### Bug Fixes
+
+* add types to package exports ([992814e](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/992814e81839503a91319770ade34685341f36e3))
+
 ## [1.1.3](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.2...v1.1.3) (2023-04-20)
 
 
