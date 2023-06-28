@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.4...v1.1.5) (2023-06-28)
+
+
+### Bug Fixes
+
+* remove types from package.json ([adbefe6](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/adbefe6b4fbfc35d84176769f401a00ad3f16e90))
+
 ## [1.1.4](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.3...v1.1.4) (2023-06-28)
 
 
