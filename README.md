@@ -26,16 +26,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 
 ```sh
 npm i eslint --save-dev
-// Or
+# Or
 yarn add -D eslint
+# Or
+pnpm add -D eslint
 ```
 
 Next, install `eslint-plugin-no-await-in-promise`:
 
 ```sh
 npm install eslint-plugin-no-await-in-promise --save-dev
-// Or
+# Or
 yarn add -D eslint-plugin-no-await-in-promise
+# Or
+pnpm add -D eslint-plugin-no-await-in-promise
 ```
 
 ## Usage
