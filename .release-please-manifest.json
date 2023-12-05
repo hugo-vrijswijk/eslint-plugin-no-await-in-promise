@@ -1,0 +1,7 @@
+{
+  "packages": {
+    ".": {
+      "package-name": "eslint-plugin-no-await-in-promise"
+    }
+  }
+}
