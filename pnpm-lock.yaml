@@ -6,13 +6,13 @@ settings:
 
 devDependencies:
   '@types/eslint':
-    specifier: ^8.4.5
+    specifier: 8.44.8
     version: 8.44.8
   '@typescript-eslint/eslint-plugin':
-    specifier: ^5.48.2
+    specifier: 5.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.55.0)(typescript@5.3.2)
   '@typescript-eslint/parser':
-    specifier: ^5.48.2
+    specifier: 5.62.0
     version: 5.62.0(eslint@8.55.0)(typescript@5.3.2)
   concurrently:
     specifier: ^8.0.1
@@ -24,22 +24,22 @@ devDependencies:
     specifier: ^3.4.2
     version: 3.5.0(esbuild@0.19.8)
   eslint:
-    specifier: ^8.32.0
+    specifier: 8.55.0
     version: 8.55.0
   eslint-config-prettier:
-    specifier: ^9.0.0
+    specifier: 9.1.0
     version: 9.1.0(eslint@8.55.0)
   eslint-plugin-eslint-plugin:
-    specifier: ^5.0.0
+    specifier: 5.1.1
     version: 5.1.1(eslint@8.55.0)
   eslint-plugin-node:
-    specifier: ^11.1.0
+    specifier: 11.1.0
     version: 11.1.0(eslint@8.55.0)
   mocha:
     specifier: ^10.0.0
     version: 10.2.0
   prettier:
-    specifier: ^3.0.0
+    specifier: 3.1.0
     version: 3.1.0
   tsup:
     specifier: ^8.0.0
@@ -270,11 +270,6 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@eslint-community/regexpp@4.5.0:
-    resolution: {integrity: sha512-vITaYzIcNmjn5tF5uxcZ/ft7/RXGrMUIS9HalWckEOF6ESiwXKoMzAQf2UW0aVd6rnOeExTJVd5hmWXucBKGXQ==}
-    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
-    dev: true
-
   /@eslint-community/regexpp@4.6.2:
     resolution: {integrity: sha512-pPTNuaAG3QMH+buKyBIGJs3g/S5y0caxw0ygM3YyE6yJFySwiGGSzA+mM3KJ8QQvzeLh3blwgSonkFjgQdxzMw==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
@@ -503,7 +498,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@eslint-community/regexpp': 4.5.0
+      '@eslint-community/regexpp': 4.6.2
       '@typescript-eslint/parser': 5.62.0(eslint@8.55.0)(typescript@5.3.2)
       '@typescript-eslint/scope-manager': 5.62.0
       '@typescript-eslint/type-utils': 5.62.0(eslint@8.55.0)(typescript@5.3.2)
