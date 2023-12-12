@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "config:js-lib", "group:linters"],
+  "schedule": ["every weekend"],
+  "timezone": "Europe/Amsterdam",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
+      "automerge": true
+    },
+    {
+      "matchPackagePrefixes": ["esbuild"],
+      "groupName": "ESBuild packages"
+    }
+  ],
+  "platformAutomerge": true
+}
