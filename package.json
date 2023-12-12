@@ -34,7 +34,7 @@
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "concurrently": "8.2.2",
-    "esbuild": "0.19.8",
+    "esbuild": "0.19.9",
     "esbuild-register": "3.5.0",
     "eslint": "8.55.0",
     "eslint-config-prettier": "9.1.0",
