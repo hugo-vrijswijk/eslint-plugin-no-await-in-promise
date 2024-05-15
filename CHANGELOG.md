@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.6...v2.0.0) (2024-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* support new flat config ([#322](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/322))
+
+### Features
+
+* support new flat config ([#322](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/322)) ([4d3ea93](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/4d3ea937e170377a9db0d95e3552ce4e0b8830e6))
+
 ## [1.1.6](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.5...v1.1.6) (2023-12-05)
 
 
