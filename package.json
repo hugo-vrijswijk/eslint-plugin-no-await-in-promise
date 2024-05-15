@@ -24,31 +24,29 @@
   },
   "scripts": {
     "check": "concurrently -c auto \"npm:lint:*\" \"npm:build\"",
-    "build": "tsup lib/index.ts --dts --sourcemap --format esm,cjs --target node16",
-    "lint:eslint": "eslint . --ignore-path .gitignore",
-    "lint:prettier": "prettier --cache --check .",
+    "build": "tsup lib/index.ts --dts --sourcemap --format esm,cjs --target node18",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
     "test": "mocha tests --extension ts -r esbuild-register --recursive"
   },
   "devDependencies": {
+    "@eslint/js": "9.2.0",
     "@types/eslint": "8.56.5",
-    "@typescript-eslint/eslint-plugin": "7.2.0",
-    "@typescript-eslint/parser": "7.2.0",
     "concurrently": "8.2.2",
     "esbuild": "0.21.1",
     "esbuild-register": "3.5.0",
-    "eslint": "8.57.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-eslint-plugin": "5.4.0",
-    "eslint-plugin-node": "11.1.0",
+    "eslint": "9.2.0",
+    "eslint-plugin-eslint-plugin": "6.1.0",
     "mocha": "10.4.0",
     "prettier": "3.2.5",
     "tsup": "8.0.2",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "typescript-eslint": "8.0.0-alpha.12"
   },
   "engines": {
-    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+    "node": "^18.17.0 || >= 20.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=8"
   }
 }

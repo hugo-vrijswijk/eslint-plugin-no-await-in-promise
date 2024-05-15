@@ -42,13 +42,28 @@ yarn add -D eslint-plugin-no-await-in-promise
 pnpm add -D eslint-plugin-no-await-in-promise
 ```
 
-## Usage
+## Usage (flat config)
+
+Configure the plugin in your `eslint.config.js`:
+
+```js
+import noAwaitInPromise from 'eslint-plugin-no-await-in-promise';
+
+export default [
+  noAwaitInPromise.configs.recommended,
+  // Other plugins here
+]
+```
+
+## Usage (legacy config)
+
+Note: from version 2.0.0 `recommended` was renamed to `recommended-legacy` to avoid conflict with the new `recommended` flat config.
 
 Configure the plugin in your `.eslintrc`:
 
 ```json
 {
-  "extends": ["plugin:no-await-in-promise/recommended"]
+  "extends": ["plugin:no-await-in-promise/recommended-legacy"]
 }
 ```
 
