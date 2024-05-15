@@ -1,4 +1,5 @@
 import type { ESLint } from 'eslint';
+import { version } from '../package.json';
 
 /**
  * @fileoverview ESLint Plugin to error when using await inside promise statements
@@ -7,7 +8,10 @@ import type { ESLint } from 'eslint';
 import noAwaitInPromise from './rules/no-await-in-promise';
 
 const plugin: ESLint.Plugin = {
-  meta: {},
+  meta: {
+    name: 'eslint-plugin-no-await-in-promise',
+    version,
+  },
   configs: {},
   rules: {
     'no-await-in-promise': noAwaitInPromise,
@@ -17,6 +21,7 @@ const plugin: ESLint.Plugin = {
 
 const configs = {
   recommended: {
+    name: 'no-await-in-promise/recommended',
     plugins: {
       'no-await-in-promise': plugin,
     },
@@ -28,6 +33,7 @@ const configs = {
    * @deprecated use recommended (flat) config instead
    */
   'recommended-legacy': {
+    name: 'no-await-in-promise/recommended-legacy',
     plugins: ['no-await-in-promise'],
     rules: {
       'no-await-in-promise/no-await-in-promise': 'error',

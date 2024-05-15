@@ -52,7 +52,7 @@ import noAwaitInPromise from 'eslint-plugin-no-await-in-promise';
 export default [
   noAwaitInPromise.configs.recommended,
   // Other plugins here
-]
+];
 ```
 
 ## Usage (legacy config)

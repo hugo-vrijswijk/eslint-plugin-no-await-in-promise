@@ -1,7 +1,7 @@
 import rule from '../../../lib/rules/no-await-in-promise';
 import { RuleTester } from 'eslint';
 
-const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 2017 } });
+const ruleTester = new RuleTester({});
 
 const arrNames = ['all', 'allSettled', 'any', 'race'];
 
