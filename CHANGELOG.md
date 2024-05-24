@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v2.0.0...v2.0.1) (2024-05-24)
+
+
+### Bug Fixes
+
+* fix legacy eslint configuration not working ([#331](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/331)) ([adfaee5](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/adfaee54a3fc078dd6a0fe5aa0e7235d5cfcb063)), closes [#329](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/329)
+
 ## [2.0.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v1.1.6...v2.0.0) (2024-05-15)
 
 
