@@ -1,4 +1,4 @@
-import type { ESLint } from 'eslint';
+import type { ESLint, Rule } from 'eslint';
 import { version } from '../package.json';
 
 /**
@@ -19,7 +19,7 @@ const plugin: ESLint.Plugin = {
   processors: {},
 };
 
-const configs = {
+export const configs = {
   recommended: {
     name: 'no-await-in-promise/recommended',
     plugins: {
@@ -33,7 +33,6 @@ const configs = {
    * @deprecated use recommended (flat) config instead
    */
   'recommended-legacy': {
-    name: 'no-await-in-promise/recommended-legacy',
     plugins: ['no-await-in-promise'],
     rules: {
       'no-await-in-promise/no-await-in-promise': 'error',
@@ -41,5 +40,9 @@ const configs = {
   },
 };
 Object.assign(plugin.configs!, configs);
+
+export const rules: Record<string, Rule.RuleModule> = {
+  'no-await-in-promise': noAwaitInPromise,
+};
 
 export default plugin as typeof plugin & { configs: typeof configs };
