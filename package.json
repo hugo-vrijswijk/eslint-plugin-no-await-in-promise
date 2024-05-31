@@ -3,7 +3,7 @@
   "version": "2.0.1",
   "description": "ESLint Plugin to error when using await inside promise statements",
   "type": "module",
-  "packageManager": "pnpm@9.1.2",
+  "packageManager": "pnpm@9.1.4",
   "keywords": [
     "eslint",
     "eslintplugin",
