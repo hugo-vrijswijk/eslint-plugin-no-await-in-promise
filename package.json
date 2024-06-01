@@ -38,7 +38,7 @@
     "eslint": "9.4.0",
     "eslint-plugin-eslint-plugin": "6.1.0",
     "mocha": "10.4.0",
-    "prettier": "3.2.5",
+    "prettier": "3.3.0",
     "tsup": "8.0.2",
     "typescript": "5.4.5",
     "typescript-eslint": "8.0.0-alpha.24"
