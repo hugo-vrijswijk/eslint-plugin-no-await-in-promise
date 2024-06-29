@@ -37,7 +37,7 @@
     "esbuild-register": "3.5.0",
     "eslint": "9.5.0",
     "eslint-plugin-eslint-plugin": "6.1.0",
-    "mocha": "10.4.0",
+    "mocha": "10.5.2",
     "prettier": "3.3.2",
     "tsup": "8.1.0",
     "typescript": "5.5.2",
