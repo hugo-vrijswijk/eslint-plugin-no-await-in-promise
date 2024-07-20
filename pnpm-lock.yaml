@@ -30,8 +30,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(eslint@9.7.0)
       mocha:
-        specifier: 10.6.0
-        version: 10.6.0
+        specifier: 10.6.1
+        version: 10.6.1
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -887,8 +887,8 @@ packages:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mocha@10.6.0:
-    resolution: {integrity: sha512-hxjt4+EEB0SA0ZDygSS015t65lJw/I2yRCS3Ae+SJ5FrbzrXgfYwJr96f0OvIXdj7h4lv/vLCrH3rkiuizFSvw==}
+  mocha@10.6.1:
+    resolution: {integrity: sha512-3DI5OWZGF2kRsNS2JV1GBU9YOwljNy0aBj8cJM3ndartWTd6iRwKleO00XB5/mAzzkUZ5h40Z0DcbswsQZ/Gvw==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
 
@@ -2029,7 +2029,7 @@ snapshots:
 
   minipass@7.1.2: {}
 
-  mocha@10.6.0:
+  mocha@10.6.1:
     dependencies:
       ansi-colors: 4.1.3
       browser-stdout: 1.3.1
