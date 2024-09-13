@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/js": "9.10.0",
     "@types/eslint": "9.6.1",
-    "concurrently": "9.0.0",
+    "concurrently": "9.0.1",
     "esbuild": "0.23.1",
     "esbuild-register": "3.6.0",
     "eslint": "9.10.0",
