@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "config:js-lib", "group:linters"],
+  "extends": ["config:recommended", "config:js-lib", "group:linters"],
   "schedule": ["every weekend"],
   "timezone": "Europe/Amsterdam",
   "lockFileMaintenance": {
@@ -16,8 +16,8 @@
       "automerge": true
     },
     {
-      "matchPackagePrefixes": ["esbuild"],
-      "groupName": "ESBuild packages"
+      "groupName": "ESBuild packages",
+      "matchPackageNames": ["esbuild{/,}**"]
     }
   ],
   "platformAutomerge": true
