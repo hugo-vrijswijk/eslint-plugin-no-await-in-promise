@@ -30,8 +30,8 @@ importers:
         specifier: 6.4.0
         version: 6.4.0(eslint@9.29.0)
       mocha:
-        specifier: 11.6.0
-        version: 11.6.0
+        specifier: 11.7.0
+        version: 11.7.0
       prettier:
         specifier: 3.5.3
         version: 3.5.3
@@ -890,8 +890,8 @@ packages:
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
 
-  mocha@11.6.0:
-    resolution: {integrity: sha512-i0JVb+OUBqw63X/1pC3jCyJsqYisgxySBbsQa8TKvefpA1oEnw7JXxXnftfMHRsw7bEEVGRtVlHcDYXBa7FzVw==}
+  mocha@11.7.0:
+    resolution: {integrity: sha512-bXfLy/mI8n4QICg+pWj1G8VduX5vC0SHRwFpiR5/Fxc8S2G906pSfkyMmHVsdJNQJQNh3LE67koad9GzEvkV6g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
 
@@ -1978,7 +1978,7 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.1
 
-  mocha@11.6.0:
+  mocha@11.7.0:
     dependencies:
       browser-stdout: 1.3.1
       chokidar: 4.0.3
