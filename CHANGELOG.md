@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v2.0.1...v3.0.0) (2025-06-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove legacy `recommended-legacy` config. Only support ESLint >=9 and Node >=20.
+
+### Miscellaneous Chores
+
+* remove deprecated legacy config and only build ESM ([#549](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/549)) ([428e016](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/428e016493967f463db2000957a16806b4e544b4))
+
 ## [2.0.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v2.0.0...v2.0.1) (2024-05-24)
 
 
