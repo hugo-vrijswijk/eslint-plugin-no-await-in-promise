@@ -1,7 +1,11 @@
-import rule from '../../../lib/rules/no-await-in-promise';
+import rule from '../../rules/no-await-in-promise.js';
 import { RuleTester } from 'eslint';
-
+import { it, describe } from 'node:test';
 const ruleTester = new RuleTester({});
+
+RuleTester.it = it;
+RuleTester.describe = describe;
+RuleTester.itOnly = it.only;
 
 const arrNames = ['all', 'allSettled', 'any', 'race'];
 

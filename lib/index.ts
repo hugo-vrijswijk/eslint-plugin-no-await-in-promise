@@ -1,13 +1,15 @@
-import type { ESLint, Rule } from 'eslint';
-import { version } from '../package.json';
+import type { ESLint, Linter, Rule } from 'eslint';
+import pkg from '../package.json' with { type: 'json' };
+import noAwaitInPromise from './rules/no-await-in-promise.js';
+
+const { version } = pkg;
 
 /**
  * @fileoverview ESLint Plugin to error when using await inside promise statements
  * @author Hugo van Rijswijk
  */
-import noAwaitInPromise from './rules/no-await-in-promise';
 
-const plugin: ESLint.Plugin = {
+const plugin = {
   meta: {
     name: 'eslint-plugin-no-await-in-promise',
     version,
@@ -17,7 +19,7 @@ const plugin: ESLint.Plugin = {
     'no-await-in-promise': noAwaitInPromise,
   },
   processors: {},
-};
+} satisfies ESLint.Plugin;
 
 export const configs = {
   recommended: {
@@ -29,17 +31,8 @@ export const configs = {
       'no-await-in-promise/no-await-in-promise': 'error',
     },
   },
-  /**
-   * @deprecated use recommended (flat) config instead
-   */
-  'recommended-legacy': {
-    plugins: ['no-await-in-promise'],
-    rules: {
-      'no-await-in-promise/no-await-in-promise': 'error',
-    },
-  },
-};
-Object.assign(plugin.configs!, configs);
+} satisfies Record<string, Linter.Config>;
+Object.assign(plugin.configs, configs);
 
 export const rules: Record<string, Rule.RuleModule> = {
   'no-await-in-promise': noAwaitInPromise,
