@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2021",
-    "module": "ES2020",
-    "moduleResolution": "Bundler",
+    "module": "nodenext",
+    "target": "ES2023",
+    "moduleResolution": "node16",
+    "outDir": "dist",
+    "rootDir": "lib",
     "declaration": true,
     "sourceMap": true,
+    "resolveJsonModule": true,
     "strict": true,
     "allowJs": false,
-    "noEmit": true,
+    "noEmit": false,
     "isolatedModules": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,
@@ -16,6 +19,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true
-  },
-  "exclude": ["dist/**/*"]
+  }
 }

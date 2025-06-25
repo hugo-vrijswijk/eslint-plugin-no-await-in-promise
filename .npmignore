@@ -1,6 +1,7 @@
-.github/
-tests/
-.eslintrc
-.prettierrc
-tsconfig.json
-*.tgz
+**
+!dist/**/*
+dist/tests/**/*
+!lib/**/*.ts
+lib/tests/**/*.ts
+*.tsbuildinfo
+!docs/**/*.md

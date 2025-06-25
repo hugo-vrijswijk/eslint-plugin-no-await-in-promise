@@ -14,10 +14,6 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "lockFileMaintenance"],
       "automerge": true
-    },
-    {
-      "groupName": "ESBuild packages",
-      "matchPackageNames": ["esbuild{/,}**"]
     }
   ],
   "platformAutomerge": true

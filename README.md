@@ -54,26 +54,3 @@ export default [
   // Other plugins here
 ];
 ```
-
-## Usage (legacy config)
-
-Note: from version 2.0.0 `recommended` was renamed to `recommended-legacy` to avoid conflict with the new `recommended` flat config.
-
-Configure the plugin in your `.eslintrc`:
-
-```json
-{
-  "extends": ["plugin:no-await-in-promise/recommended-legacy"]
-}
-```
-
-This essentially expands to:
-
-```json
-{
-  "plugins": ["no-await-in-promise"],
-  "rules": {
-    "no-await-in-promise/no-await-in-promise": "error"
-  }
-}
-```
