@@ -37,7 +37,7 @@
     "eslint-plugin-eslint-plugin": "6.5.0",
     "prettier": "3.6.2",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.36.0"
+    "typescript-eslint": "8.38.0"
   },
   "engines": {
     "node": ">= 20.0.0"
