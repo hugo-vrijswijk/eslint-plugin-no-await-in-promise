@@ -2,10 +2,11 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import eslintPlugin from 'eslint-plugin-eslint-plugin';
+import { defineConfig } from 'eslint/config';
 
-export default [
+export default defineConfig(
   eslint.configs.recommended,
-  eslintPlugin.configs['flat/recommended'],
+  eslintPlugin.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
@@ -22,4 +23,4 @@ export default [
   {
     ignores: ['dist', 'node_modules', 'public'],
   },
-];
+);
