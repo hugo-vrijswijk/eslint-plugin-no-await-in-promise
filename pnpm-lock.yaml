@@ -24,8 +24,8 @@ importers:
         specifier: 9.34.0
         version: 9.34.0
       eslint-plugin-eslint-plugin:
-        specifier: 6.5.0
-        version: 6.5.0(eslint@9.34.0)
+        specifier: 7.0.0
+        version: 7.0.0(eslint@9.34.0)
       prettier:
         specifier: 3.6.2
         version: 3.6.2
@@ -270,11 +270,11 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-eslint-plugin@6.5.0:
-    resolution: {integrity: sha512-DT8YpcXDtMBcBZN39JlkHGurHKU8eYFLavTrnowQLeNwqe/diRUsllsftgD/7dZ2/ItabNLLF2/EYapE1H+G7Q==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+  eslint-plugin-eslint-plugin@7.0.0:
+    resolution: {integrity: sha512-EgiW9zf4PbqA+yN9T6Z8bHx46+fWtAIXFrYkL4nSTnI84LnTKmzjh+cIJaVAyFVZveKUSG8LcVe1suGG78qZPw==}
+    engines: {node: ^20.19.0 || ^22.13.1 || >=24.0.0}
     peerDependencies:
-      eslint: '>=8.23.0'
+      eslint: '>=9.0.0'
 
   eslint-scope@8.4.0:
     resolution: {integrity: sha512-sNXOfKCn74rt8RICKMvJS7XKV/Xk9kA7DyJr8mJik3S7Cwgy3qlkkmyS2uQB3jiJg6VNdZd/pDBJu0nvG2NlTg==}
@@ -887,7 +887,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-eslint-plugin@6.5.0(eslint@9.34.0):
+  eslint-plugin-eslint-plugin@7.0.0(eslint@9.34.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.7.0(eslint@9.34.0)
       eslint: 9.34.0
