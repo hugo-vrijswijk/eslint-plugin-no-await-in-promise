@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v3.0.0...v3.0.1) (2025-09-10)
+
+
+### Build System
+
+* publish package with trusted OIDC publishing ([#586](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/issues/586)) ([3cbfc86](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/commit/3cbfc86f54d84e2be03f20b0b7749c9817372405))
+
 ## [3.0.0](https://github.com/hugo-vrijswijk/eslint-plugin-no-await-in-promise/compare/v2.0.1...v3.0.0) (2025-06-25)
 
 
