@@ -4,5 +4,5 @@
       "package-name": "eslint-plugin-no-await-in-promise"
     }
   },
-  ".": "3.0.0"
+  ".": "3.0.1"
 }
