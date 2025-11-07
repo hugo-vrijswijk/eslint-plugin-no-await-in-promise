@@ -29,15 +29,15 @@
     "test": "node --test --enable-source-maps --test-timeout 5000 'dist/tests/**/*.js'"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.0",
+    "@eslint/js": "9.39.1",
     "@types/eslint": "9.6.1",
     "@types/node": "24.9.2",
     "concurrently": "9.2.1",
-    "eslint": "9.39.0",
+    "eslint": "9.39.1",
     "eslint-plugin-eslint-plugin": "7.2.0",
     "prettier": "3.6.2",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.46.2"
+    "typescript-eslint": "8.46.3"
   },
   "engines": {
     "node": ">= 20.0.0"
