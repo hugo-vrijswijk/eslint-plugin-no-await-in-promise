@@ -22,7 +22,7 @@
     }
   },
   "scripts": {
-    "check": "concurrently -c auto \"npm:lint:*\" \"npm:build\"",
+    "check": "concurrently -c auto \"pnpm:lint:*\" \"pnpm:build\"",
     "build": "tsc -b",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
