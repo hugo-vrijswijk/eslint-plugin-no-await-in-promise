@@ -33,11 +33,11 @@
     "@types/eslint": "9.6.1",
     "@types/node": "26.6.11",
     "concurrently": "10.0.7",
-    "eslint": "10.15.0",
+    "eslint": "10.16.0",
     "eslint-plugin-eslint-plugin": "7.6.2",
     "prettier": "3.10.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.73.0"
+    "typescript-eslint": "8.74.0"
   },
   "engines": {
     "node": ">= 20.0.0"
